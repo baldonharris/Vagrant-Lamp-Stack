@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "chad-thompson/ubuntu-trusty64-gui"
-  config.vm.synced_folder "./", "/var/www/html"
+  config.vm.synced_folder "./.vagrant/", "/var/www/html"
   config.vm.provision :shell, path: "bootstrap.sh"
 
   # Disable automatic box update checking. If you disable this, then
